@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ninja - Recipes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen text-gray-700">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="text-lg font-bold tracking-widest">FOOD NINJA</div>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#" class="flex items-center space-x-1 hover:text-red-500">
+        <span>Home</span> <span>🏠</span>
+      </a>
+      <a href="#" class="flex items-center space-x-1 hover:text-red-500">
+        <span>About</span> <span>🔆</span>
+      </a>
+      <a href="#" class="flex items-center space-x-1 hover:text-red-500">
+        <span>Contact</span> <span>✉️</span>
+      </a>
+    </nav>
+    <div class="space-x-2">
+      <button class="border border-red-400 text-red-400 px-4 py-1 rounded-full hover:bg-red-100 transition">Log In</button>
+      <button class="border border-red-400 text-red-400 px-4 py-1 rounded-full hover:bg-red-100 transition">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-4 md:px-16">
+    <h1 class="text-4xl font-bold mt-4">Recipes</h1>
+    <p class="text-lg text-gray-500 mb-6">For Ninjas</p>
+
+    <!-- Latest Recipes -->
+    <section>
+      <h2 class="text-lg font-semibold mb-4">Latest Recipes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="c:\Users\zakar\Downloads\OIP.jpg" class="w-full h-48 object-cover" alt="">
+          <div class="p-4">
+            <span class="text-sm bg-gray-200 rounded-full px-3 py-1 inline-block mb-2">⏱ 25 mins</span>
+            <h3 class="text-xl font-semibold">5 Bean Chili Stew</h3>
+            <p class="text-sm text-gray-500">Recipe by Mario</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="c:\Users\zakar\Downloads\OIP (1).jpg" class="w-full h-48 object-cover" alt="">
+          <div class="p-4">
+            <span class="text-sm bg-gray-200 rounded-full px-3 py-1 inline-block mb-2">⏱ 25 mins</span>
+            <h3 class="text-xl font-semibold">Veg Noodles</h3>
+            <p class="text-sm text-gray-500">Recipe by Mario</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="c:\Users\zakar\Downloads\OIP (2).jpg" class="w-full h-48 object-cover" alt="">
+          <div class="p-4">
+            <span class="text-sm bg-gray-200 rounded-full px-3 py-1 inline-block mb-2">⏱ 25 mins</span>
+            <h3 class="text-xl font-semibold">Tofu Curry</h3>
+            <p class="text-sm text-gray-500">Recipe by Mario</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Popular -->
+    <section class="mt-12">
+      <h2 class="text-lg font-semibold mb-4">Most Popular</h2>
+      <div class="flex justify-center">
+        <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Load More</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
